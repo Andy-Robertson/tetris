@@ -1,36 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+
+.all-elements {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-color: #DCC7AA;
+  color: #1D2731;
+  font-family: 'Bree Serif', serif;
+}
+
 .container {
   display: flex;
 }
 
+button {
+  background-color: #8FC33A;
+  border: 2px solid #6B7A8F;
+  color: #1D2731;
+  font-family: 'Bree Serif', serif;
+  margin-top: 44px;
+  padding-top: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 20px;
+  transition: 0.8s ease-in-out;
+}
+
+button:hover {
+  box-shadow: 0 2.5px 5px 0 rgba(0, 0, 0, 0.2), 0 2.5px 5px 0 rgba(0, 0, 0, 0.19);
+  color: #1D2731;
+  cursor: pointer;
+  font-family: 'Bree Serif', serif;
+  transition: 0.8s ease-in-out;
+}
 
 .grid {
-display: flex;
-flex-wrap: wrap;
-width: 200px;
-height: 400px;
-background-color: yellow;
+  background-color: #F7C331;
+  border: 2px solid #6B7A8F;
+  box-shadow: 0 2.5px 5px 0 rgba(0, 0, 0, 0.2), 0 2.5px 5px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+  width: 200px;
 }
 
 .grid div {
-width: 20px;
-height: 20px;
+  height: 20px;
+  width: 20px;
 }
 
-.tetromino {
-background-color: blue;
+.howto {
+  margin-top: 40px;
 }
 
+h3 {
+  padding-top: 22px;
+}
 
 .mini-grid {
-  margin-left: 50px;
-  width: 80px;
-  height: 80px;
+  background-color: #F7C331;
+  border: 1px solid #6B7A8F;
+  box-shadow: 0 1.5px 2px 0 rgba(0, 0, 0, 0.2), 0 2.5px 2px 0 rgba(0, 0, 0, 0.19);
   display: flex;
   flex-wrap: wrap;
-  background-color: yellow;
+  height: 80px;
+  margin-left: 50px;
+  width: 80px;
 }
 
 .mini-grid div {
   height: 20px;
   width: 20px;
+}
+
+.tetromino {
+  background-color: #F7882F;
+  box-shadow: 0.5px 0.5px 0.5px 0.5px inset #F7c331;
+}
+
+.title {
+  font-size: 50px;
 }
